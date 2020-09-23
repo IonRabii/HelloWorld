@@ -11,10 +11,10 @@ public class MainVerticle extends AbstractVerticle {
       req.response()
         .putHeader("content-type", "text/plain")
         .end("Hello from Vert.x!");
-    }).listen(8888, http -> {
+    }).listen(7880, http -> {
       if (http.succeeded()) {
         startPromise.complete();
-        System.out.println("HTTP server started on port 8888");
+        System.out.println("HTTP server started on port 7880");
       } else {
         startPromise.fail(http.cause());
       }
