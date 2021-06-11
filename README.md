@@ -14,3 +14,5 @@ simple  service for deploy in openshift
 
 **pull image from local registry**<br>
 `docker pull localhost:5000/image_name:tag`
+
+..
